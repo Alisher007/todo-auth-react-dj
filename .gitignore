@@ -1,9 +1,8 @@
 # Ignore backend specific files
-/backend/.env
-/backend/db.sqlite3
 
+db.sqlite3
 # Ignore frontend specific files
-/frontend/node_modules
+node_module/*
 
 # Ignore IDE settings
 /.vscode/
@@ -13,15 +12,13 @@
 /logs/
 
 # Ignore local environment files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 .env*.local
 
-# Ignore Python bytecode files
-__pycache__/
-*.pyc
 
 # Ignore Django specific files
 *.pyo
