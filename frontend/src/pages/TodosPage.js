@@ -34,9 +34,9 @@ const TodosPage = () => {
         }
     };
 
-    const completeTodo = async (id) => {
+    const completeTodo = async (todo) => {
         try {
-            const response = await api.put(`/api/toggle/${id}/`);
+            await api.put(`/api/update/${todo.id}/`, {title: todo.title, description: todo.description, completed: !todo.completed});
             getTodos(); 
         } catch (error) {
             console.error('Error toggling todo completion:', error);
@@ -45,7 +45,7 @@ const TodosPage = () => {
 
     const removeTodo = async (id) => {
         try {
-            const response = await api.delete(`/api/delete/${id}/`);
+            await api.delete(`/api/delete/${id}/`);
             getTodos(); 
         } catch (error) {
             console.error('Error toggling todo deletion:', error);
@@ -61,6 +61,7 @@ const TodosPage = () => {
                     <Todo key={todo.id} index={index} todo={todo} 
                     completeTodo={completeTodo}
                     removeTodo={removeTodo}
+                    getTodos={getTodos}
                     />
                 ))}
             </ul>
