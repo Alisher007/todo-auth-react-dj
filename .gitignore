@@ -1,6 +1,6 @@
 # Ignore backend specific files
 
-db.sqlite3
+db.sqlite3*
 # Ignore frontend specific files
 node_module*
 # Ignore IDE settings
