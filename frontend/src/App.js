@@ -6,14 +6,14 @@ import { AuthProvider } from './context/AuthContext'
 import HomePage from './pages/HomePage'
 import TodosPage from './pages/TodosPage'
 import LoginPage from './pages/LoginPage'
-import Header from './components/Header'
+import Nav from './components/Nav'
 
 function App() {
   return (
     <div className="App">
       <Router>
         <AuthProvider>
-          <Header/>
+          <Nav/>
 			<Routes>
 			<Route exact path='/' element={<PrivateRoute/>}>
 				<Route exact path='/' element={<HomePage/>}/>

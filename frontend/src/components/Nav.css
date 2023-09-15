@@ -1,0 +1,51 @@
+/* Add this CSS code to your stylesheet or style module */
+
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .logout {
+    cursor: pointer;
+  }
+  
+  .username {
+    margin-left: auto;
+  }
+
+  .divider{
+    margin-right: 10px;
+  }
+  
+  /* Optional: Add a logo or site name to the navbar */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo:hover {
+    text-decoration: none;
+  }
+  
+  /* Optional: Add a different background color on hover for the navbar links */
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
